@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Product>Business Tracking</Product>
+    <Company>BI Solutions</Company>
+    <Authors>Steven Leong</Authors>
+    <Version>2020.3.0</Version>
+    <Description>Business Solutions for Tracking</Description>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Projects\BI Solutions.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\Library</OutputPath>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\BI Solutions.snk" Link="BI Solutions.snk" />
+  </ItemGroup>
+
+</Project>
